@@ -1,19 +1,26 @@
 {
-    "name": "Website productivity timer",
+    "name": "Website Productivity Timer",
     "description": "Base Level Extension",
     "version": "1.0",
     "manifest_version": 3,
+    "permissions": ["activeTab", "contextMenus"],
     "content_scripts": [
       {
-        "css": ["scripts/style.css"],
         "js": ["scripts/content.js"],
-        "matches": ["https://*/*"]
+        "matches": ["<all_urls>"],
+        "css": ["scripts/style.css"]
       }
+    ],
+    "background": [
+      {
+      "scripts": ["scripts/background.js"],
+      "persistent": true
+    }
     ],
     "icons": {
       "150": "images/clock.png"
     },
-    "action": {
+    "browser_action": {
       "default_popup": "input_popup.html"
     }
   }

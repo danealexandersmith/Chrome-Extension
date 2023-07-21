@@ -1,9 +1,23 @@
-#blackScreen {
-    width: 700;
-    height: 700;
-    background-color: black;
+html {
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    background-color:blue;
+    color: beige;
 }
 
-body {
-    background-image: ('chrome-extension://reading-time/images/clock.png')!important;
+
+div {
+    position: absolute;
+}
+
+
+#button {
+    height: 25px;
+    width: 150px;
+    background-color: rgb(192, 192, 203);
+    color: black;
+    position: absolute;
+    top: 150px;
+    right: 125px;
 }
