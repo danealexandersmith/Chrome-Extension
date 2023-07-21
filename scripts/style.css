@@ -1,0 +1,9 @@
+#blackScreen {
+    width: 700;
+    height: 700;
+    background-color: black;
+}
+
+body {
+    background-image: ('chrome-extension://reading-time/images/clock.png')!important;
+}

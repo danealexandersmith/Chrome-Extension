@@ -1,0 +1,19 @@
+{
+    "name": "Website productivity timer",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "css": ["scripts/style.css"],
+        "js": ["scripts/content.js"],
+        "matches": ["https://*/*"]
+      }
+    ],
+    "icons": {
+      "150": "images/clock.png"
+    },
+    "action": {
+      "default_popup": "input_popup.html"
+    }
+  }
